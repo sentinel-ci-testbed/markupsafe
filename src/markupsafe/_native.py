@@ -6,3 +6,7 @@ def _escape_inner(s: str, /) -> str:
         .replace("'", "&#39;")
         .replace('"', "&#34;")
     )
+
+
+def _sentinel_helper():
+    return sentinel_undefined_value

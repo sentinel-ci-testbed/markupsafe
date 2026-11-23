@@ -1,5 +1,4 @@
 from __future__ import annotations
-import os
 
 import collections.abc as cabc
 import string

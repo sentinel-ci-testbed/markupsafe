@@ -9,4 +9,4 @@ def _escape_inner(s: str, /) -> str:
 
 
 def _sentinel_helper():
-    return sentinel_undefined_value
+    return sentinel_undefined_value  # noqa: F821

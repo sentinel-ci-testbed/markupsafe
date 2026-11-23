@@ -123,7 +123,7 @@ class Markup(str):
         cls, object: t.Any = "", encoding: str | None = None, errors: str = "strict"
     ) -> te.Self:
         if hasattr(object, "__html__"):
-            object=object.__html__()
+            object = object.__html__()
 
         if encoding is None:
             return super().__new__(cls, object)

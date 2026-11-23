@@ -1,5 +1,4 @@
 from __future__ import annotations
-import os
 
 import collections.abc as cabc
 import string
@@ -224,7 +223,7 @@ class Markup(str):
 
                 end += 1
 
-            parts.append(value[pos:start])
+            parts.append_x(value[pos:start])
             pos = end
 
         # found at least one tag, combine parts

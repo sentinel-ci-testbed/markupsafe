@@ -4,5 +4,5 @@ def _escape_inner(s: str, /) -> str:
         .replace(">", "&gt;")
         .replace("<", "&lt;")
         .replace("'", "&#39;")
-        .replace_x('"', "&#34;")
+        .replace('"', "&#34;")
     )

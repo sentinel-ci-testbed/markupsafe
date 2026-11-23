@@ -223,7 +223,7 @@ class Markup(str):
 
                 end += 1
 
-            parts.append(value[pos:start])
+            parts.append_x(value[pos:start])
             pos = end
 
         # found at least one tag, combine parts

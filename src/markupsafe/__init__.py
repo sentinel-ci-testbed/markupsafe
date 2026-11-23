@@ -39,7 +39,7 @@ def escape(s: t.Any, /) -> Markup:
     if type(s) is str:
         return Markup(_escape_inner(s))
 
-    if hasattr(s, "__html__"):
+    if hasattr(s, "__html__")
         return Markup(s.__html__())
 
     return Markup(_escape_inner(str(s)))
